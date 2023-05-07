@@ -1,0 +1,203 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/RESOURCES/images/bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.card {
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
+.calculator {
+    
+    padding: 20px 10px 10px 10px;
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 272px;
+}
+
+form {
+    width: 100%;
+}
+
+
+.screen input {
+    border: none;
+    width: 100%;
+    background: #e8f0fe;
+    outline: none;
+    height: 70px;
+    font-size: 40px;
+    color: black;
+    padding: 10px;
+    text-align: right;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.plus {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.buttons input {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.buttons input:nth-child(1) {
+    background: linear-gradient(135deg, #FF416C, #FF4B2B);
+}
+
+.buttons input:nth-child(2) {
+    background: linear-gradient(135deg, #6EEB83, #FFD300);
+}
+
+
+.buttons input:nth-child(3) {
+    background: linear-gradient(135deg, #4831D4, #CC00FF);
+}
+
+
+.buttons input:nth-child(4) {
+    background: linear-gradient(135deg, #FFA07A, #FFD700);
+}
+
+.buttons input:nth-child(5) {
+    background: linear-gradient(135deg, #A259FF, #FF7AA5);
+}
+
+.buttons input:nth-child(6) {
+    background: linear-gradient(135deg, #43CBFF, #4BFFA5);
+}
+
+.buttons input:nth-child(7) {
+    background: linear-gradient(135deg, #FF7AA5, #FFD700);
+}
+
+.buttons input:nth-child(8) {
+    background: linear-gradient(135deg, #FF416C, #FFA07A);
+}
+
+.buttons input:nth-child(9) {
+    background: linear-gradient(135deg, #43CBFF, #FFD300);
+}
+
+.buttons input:nth-child(10) {
+    background: linear-gradient(135deg, #A259FF, #FFD300);
+}
+
+.buttons input:nth-child(11) {
+    background: linear-gradient(135deg, #6EEB83, #43CBFF);
+}
+
+.buttons input:nth-child(12) {
+    background: linear-gradient(135deg, #FF7AA5, #A259FF);
+}
+
+.buttons input:nth-child(13) {
+    background: linear-gradient(135deg, #FFD700, #FFA07A);
+}
+
+.buttons input:nth-child(14) {
+    background: linear-gradient(135deg, #43CBFF, #FF7AA5);
+}
+
+.buttons input:nth-child(15) {
+    background: linear-gradient(135deg, #6EEB83, #A259FF);
+}
+
+.buttons input:nth-child(16) {
+    background: linear-gradient(135deg, #FFA07A, #FF7AA5);
+}
+
+.buttons input:nth-child(17) {
+    background: linear-gradient(135deg, #FFD300, #FF7AA5);
+}
+
+.buttons input:nth-child(18) {
+    background: linear-gradient(135deg, #A259FF, #FF416C);
+}
+
+.buttons input:nth-child(19) {
+    background: linear-gradient(135deg, #1B1B1B, #808080);
+}
+
+.attribution {
+    font-size: 16px;
+    color: white;
+    background-color: #1B1B1B;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.signature {
+    width: 70px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.attribution a {
+    color: rgb(26, 26, 235);
+}
+
+@media only screen and (max-width: 480px) {
+    .calculator {
+        width: 200px;
+    }
+
+    .screen input {
+        height: 53px;
+        font-size: 20px;
+    }
+    .buttons {
+        gap: 5px;
+        padding: 0px;
+    }
+
+    .buttons input {
+        width: 38px;
+    }
+    
+    .attribution {
+        font-size: 14px;
+    }
+}
